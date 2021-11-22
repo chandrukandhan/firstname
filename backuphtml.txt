@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,
+        shrink-to-fit=no">
+        <link rel="stylesheet" href="cssfile.css">
+        <title>Registration Form</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+    </head>
+    <body><center>
+        <script>
+            $(document).ready(function(){
+                $("#submit").click(function(){
+                    var name=$("#name").val();
+                    var rnid=$("#rnid").val();
+                    var gmail=$("#gmail").val();
+                    var password=$("#password").val();
+                    var phone=$("#phone").val();
+                    var gender=$("#gender").val();
+                    var degree=$("#degree").val();
+                    var salary=$("#salary").val();
+                    var pan=$("#pan").val();
+                    var aadhar=$("#aadhar").val();
+                    var location=$("#location").val();
+                    var files=$("#files").val();
+                    if(name.length == ""){
+                        $("#p1").text("Enter a value");
+                        $("#name").focus();
+                        return false;
+                    }
+                    else if(rnid.length == ""){
+                        $("#p2").text("Enter a value");
+                        $("#rnid").focus();
+                        return false;
+                    }
+                    else if(gmail.length == ""){
+                        $("#p3").text("Enter a value");
+                        $("#gmail").focus();
+                        return false;
+                    }
+                    else if(password.length == ""){
+                        $("#p4").text("Enter a value");
+                        $("#password").focus();
+                        return false;
+                    }
+                    else if(phone.length == ""){
+                        $("#p5").text("Enter a value");
+                        $("#phone").focus();
+                        return false;
+                    }
+                    else if(gender.length == ""){
+                        $("#p6").text("Enter a value");
+                        $("#gender").focus();
+                        return false;
+                    }
+                    else if(degree.length == ""){
+                        $("#p7").text("Enter a value");
+                        $("#degree").focus();
+                        return false;
+                    }
+                    else if(salary.length == ""){
+                        $("#p8").text("Enter a value");
+                        $("#salary").focus();
+                        return false;
+                    }
+                    else if(pan.length == ""){
+                        $("#p9").text("Enter a value");
+                        $("#pan").focus();
+                        return false;
+                    }
+                    else if(aadhar.length == ""){
+                        $("#p10").text("Enter a value");
+                        $("#aadhar").focus();
+                        return false;
+                    }
+                    else if(location.length == ""){
+                        $("#p11").text("Enter a value");
+                        $("#location").focus();
+                        return false;
+                    }
+                    else if(files.length == ""){
+                        $("#p12").text("Enter a value");
+                        $("#files").focus();
+                        return false;
+                    }
+                    else{
+                        var con=confirm("are sure want to submit?");
+                        if(con == true){
+                            document.write("Your register has been succesfully recorded");
+                            return true;
+                        }
+                        else{
+                            return false;
+                        }
+                    }
+                });
+            });
+         </script>
+        <section class="bg">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-4">
+                        <div class="form-wrap">
+                            <div class="form-heading">
+                                <h1>Registration Form</h1>
+                                <p id="p0">Enter your personal details</p>
+                            </div>
+                            <form name="regform" id="regform">
+                                <div class="form-group">
+                                    <label>Name: </label>
+                                    <input type="text" class="form-control" id="name"
+                                    name="" placeholder="Enter your name">
+                                    <p id="p1"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label>RN id: </label>
+                                    <input type="text" class="form-control" id="rnid"
+                                    name="" placeholder="Like RN0000">
+                                    <p id="p2"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Gmail: </label>
+                                    <input type="email" class="form-control" id="gmail"
+                                    name="" placeholder="Enter your Gmail id">
+                                    <p id="p3"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Password: </label>
+                                    <input type="password" class="form-control" id="password"
+                                    name="" placeholder="Enter your password">
+                                    <p id="p4"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Mobile No: </label>
+                                    <input type="number" class="form-control" id="phone"
+                                    name="" maxlength="10" placeholder="Enter your mobile number">
+                                    <p id="p5"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Enter your Gender: </label>
+                                    <select name="gender" class="form-control" id="gender">
+                                      <option>Choose Gender</option>
+                                      <option>Male</option>
+                                      <option>Female</option>
+                                      <option>Others</option>
+                                    </select>
+                                    <p id="p6"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Enter your Qualification: </label>
+                                    <select name="qualification" class="form-control" id="degree">
+                                      <option>Choose Degree</option>
+                                      <option>UG</option>
+                                      <option>PG</option>
+                                      <option>PHD</option>
+                                    </select>
+                                    <p id="p7"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Salary: </label>
+                                    <input type="number" class="form-control" id="salary"
+                                    name="" placeholder="Enter your salary">
+                                    <p id="p8"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Pan number: </label>
+                                    <input type="text" class="form-control" id="pan"
+                                    name="" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" placeholder="Enter PAN number">
+                                    <p id="p9"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Aadhar Number: </label>
+                                    <input type="text" class="form-control" id="aadhar"
+                                    name="" maxlength="12" placeholder="Enter Aadhar number">
+                                    <p id="p10"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Enter your Location: </label>
+                                    <select name="location" class="form-control" id="location">
+                                      <option>Current Location</option>
+                                      <option>Chennai</option>
+                                      <option>Chengalpatt</option>
+                                      <option>Kanchipuram</option>
+                                      <option>Coimbatore</option>
+                                      <option>Thiruvanamalai</option>
+                                    </select>
+                                    <p id="p11"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="files">Submit your payslip: </label>      
+                                    <input type="file" id="files" name="files">
+                                    <p id="12"></p>
+                                </div>
+
+                            
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-primary btn-block"
+                                    id="submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

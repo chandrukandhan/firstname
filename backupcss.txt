@@ -1,0 +1,57 @@
+.bg{
+    background-color:lightyellow;
+    padding: 80px 80px;
+    font-family: 'montserrat',sans-serif;
+}
+.form-wrap{
+    position: relative;
+    box-shadow:rgba(221,230,237,0.4) 0px 3px 10px 0px;
+    background-color: white;
+}
+#regform{
+    padding: 50px 30px 30px 30px;
+}
+.form-heading{
+    position:relative;
+    width:100%;
+    padding: 15px 0px;
+    text-align: center;
+    color:white;
+    background-color:mediumslateblue;
+}
+#submit{
+    position: relative;
+    width:30%;
+    top: 20px;
+    padding: 15px 0px;
+    text-align: center;
+    color: white;
+    background-color:mediumslateblue;
+    font-size: 20px;
+}
+h1{
+    font-size: 40px;
+    font-family: cursive;
+}
+#p0,label{
+    font-family: cursive;
+    font-size: 20px;
+}
+#regform label{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+.form-control{
+    border: none;
+    padding: 0px;
+    border-bottom: 2px solid #b5b5b5;
+    border-radius: 0px;
+    padding: 10px;
+}
+#name,#rnid,#gmail,#password,#phone,#gender,#degree,#salary,#pan,#aadhar,#location,#files{
+    font-size: 15px;
+}
+#p1,#p2,#p3,#p4,#p5,#p6,#p7,#p8,#p9,#p10,#p11,#p12{
+    color: red;
+}
